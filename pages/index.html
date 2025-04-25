@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css">
+
+ </head>
+
+ <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Travel Explorer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#card">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#carousel">Discover</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="text-center has-text-align-top font-dropshow">
+      <h1 class="display-3">Discover Your Next Adventure in Central Asia</h1>
+      <p class="lead">"Kazakhstan: A Journey Through Steppes, Culture, and Adventure"</p>
+     
+    
+      <!-- Form Section -->
+        <form class="form-inline">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name">
+      
+          <label for="destination">Destination:</label>
+          <input type="text" id="destination" name="destination" placeholder="City or place">
+      
+          <label for="checkin">Check-in:</label>
+          <input type="date" id="checkin" name="checkin">
+      
+          <label for="checkout">Check-out:</label>
+          <input type="date" id="checkout" name="checkout">
+      
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      
+  </section>
+
+  <!-- Cards Section -->
+  <div class="container py-5" id="card">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/pics/IMG_7431-Sharyn_canyon.jpg" class="card-img-top" alt="Beach" width="400" height="300">
+          <div class="card-body">
+            <h5 class="card-title">Charyn Canyon</h5>
+            <p class="card-text">Charyn Canyon is a breathtaking natural formation located in southeastern Kazakhstan, carved by the Charyn River over millions of years. Its dramatic red rock formations and towering cliffs stretch for over 90 kilometers. The most famous section, the Valley of Castles, features unique shapes that resemble ancient fortresses. Visitors can hike, camp, and explore the canyon’s otherworldly beauty. Charyn offers an unforgettable adventure in one of Central Asia’s most stunning landscapes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/pics/Kolsai.jpg" class="card-img-top" alt="City" width="400" height="300" >
+          <div class="card-body">
+            <h5 class="card-title">Kolsai Lakes</h5>
+            <p class="card-text">Kolsai Lakes are a stunning trio of alpine lakes nestled in the northern Tien Shan mountains. Known for their crystal-clear waters and lush pine forests, the lakes attract hikers, campers, and nature lovers year-round. The area offers peaceful trails, horseback riding, and panoramic views of untouched wilderness. Each lake sits at a different altitude, creating a magical, tiered landscape. Kolsai is a serene escape that showcases Kazakhstan’s natural beauty at its finest.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/pics/Shymbulak.jpg" class="card-img-top" alt="Mountains" width="400" height="300">
+          <div class="card-body">
+            <h5 class="card-title">Shymbulak Ski Resort</h5>
+            <p class="card-text">Shymbulak Ski Resort is the top skiing destination in Kazakhstan, nestled in the scenic mountains near Almaty. It offers world-class slopes for skiers and snowboarders of all levels. The resort features modern lifts, cozy chalets, and breathtaking views of the Tian Shan range. Visitors can enjoy winter sports, fine dining, and a lively après-ski atmosphere. Shymbulak is a perfect blend of adventure, luxury, and natural beauty.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Carousel -->
+  <div class="container mb-5" id="carousel">
+    <div id="travelCarousel" class="carousel slide" data-bs-ride="carousel" image="rounded">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/pics/Almaty-city.jpg" class="d-block w-100" alt="Nature" >
+        </div>
+        <div class="carousel-item">
+          <img src="/pics/kolsay-lake-kazakhstan-1024x705.jpg.webp" class="d-block w-100" alt="Adventure"  >
+        </div>
+        <div class="carousel-item">
+          <img src="/pics/turkistan-mausoleum-kazakhstan-1000x667.jpg" class="d-block w-100" alt="Travel">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Table Section -->
+  <div class="container mb-5">
+    <h2>Top Destinations</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Destination</th>
+          <th>Places</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Almaty</td>
+          <td>Charyn Canyon</td>
+          <td>$100-$150</td>
+        </tr>
+        <tr>
+          <td>Almaty</td>
+          <td>Kok Tobe</td>
+          <td>$200-$250</td>
+        </tr>
+        <tr>
+          <td>Almaty</td>
+          <td>Kolsai Lakes</td>
+          <td>$100-$200</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+
+  <!-- Contact & Modal -->
+  <div class="container my-5 text-center" id="contact">
+    <h2>Contact Us</h2>
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal">
+      Send a Message
+    </button>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="message-name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="message-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-name" class="form-label">Your Email</label>
+                <input type="text" class="form-control" id="message-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="form-label">Message</label>
+                <textarea class="form-control" id="message-text" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Footer-->
+  <footer class="bg-light text-center py-3 mt-5">
+    <p>Follow Us</p>
+    <div>
+      <a href="#" class="me-3"><i class="bi bi-twitter"></i> Twitter</a>
+      <a href="#" class="me-3"><i class="bi bi-instagram"></i> Instagram</a>
+      <a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
+    </div>
+
+    <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/statics/script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</body>
+</html>
